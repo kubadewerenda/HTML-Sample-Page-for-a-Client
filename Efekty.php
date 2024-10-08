@@ -16,14 +16,14 @@
                 <img class="diamond-logo" src="css/img/logo.png" alt="#">       
             </h1>
             <nav class="navbar navbar-expand-lg navbar-dark margines">
-                <a class="navbar-brand " href="Stronaglowna.html"><img src="css/img/logo.png" width="60" height="40" alt="" class="d-inline-block align-bottom"></a>
+                <a class="navbar-brand " href="index.html"><img src="css/img/logo.png" width="60" height="40" alt="" class="d-inline-block align-bottom"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełacznik nawigacji">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mainmenu">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="Stronaglowna.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true">Oferty</a>
@@ -184,7 +184,7 @@
         </main>
         <footer class="coutainer">
             <section class="text-center">
-                <a href="Stronaglowna.html"><img  src="css/img/logo.png" alt="#" width="211" height="168"></a>                                   
+                <a href="index.html"><img  src="css/img/logo.png" alt="#" width="211" height="168"></a>                                   
             </section> 
                 <section class="row">
                     <p class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center"><a href="Kontakt.html"><img src="css/img/phone.png" width="24" height="24" alt="#"></a>+48 664 714 423</p>
