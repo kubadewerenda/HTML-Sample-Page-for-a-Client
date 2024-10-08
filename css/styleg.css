@@ -1,0 +1,225 @@
+header {
+    background-image: url(img/headrbg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.nav-link {
+    color: #ffffff;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: #FFCC00;
+    transform: scale(1.05);
+}
+.marginess {
+    margin-right: 10px;
+}
+.activee {
+    color: #FFCC00;
+}
+.dpi {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, monospace;
+    letter-spacing: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+.dpi:hover{
+    color: #FFCC00;
+    background: fixed;
+    transform: scale(1.05);
+}
+.dropdown-menu {
+    background-color: #5a5a5a;
+    border: none;
+    border-radius: 0% 25% 5% 25%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.coutainer-h1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.diamond-napis {
+    width: 630px;
+    height: 280px;
+    max-width: 97%;
+    max-height: 15%;
+}
+.diamond-logo {
+    width: 400px;
+    height: 250px;
+    max-width: 100%;
+}
+.margines {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+body {
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 31%, rgba(22,22,22,1) 100%, rgba(255,204,0,1) 100%);
+}
+
+@media screen and (max-width: 1100px) {
+    .diamond-logo{
+      display: none;
+    }
+}
+
+@media screen and (min-width: 200px) {
+    main p,
+    footer p,
+    main button{
+      font-size: 14px;
+    }
+}
+@media screen and (min-width: 600px) {
+    main p,
+    footer p,
+    main button{
+      font-size: medium;
+    }
+}
+@media screen and (min-width: 900px) {
+    main p,
+    main button{
+      font-size: 22px;
+    }
+    footer p{
+        font-size: medium;
+    }
+}
+@media screen and (min-width: 200px) {
+    .h2home,
+    .h2home-right {
+      font-size: 25px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .h2home,
+    .h2home-right {
+      font-size: 35px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .h2home,
+    .h2home-right {
+      font-size: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+header a {
+    font-family: Verdana, Geneva, Tahoma, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    margin-right:  40px;
+    color: #5a5a5a;
+    font-weight: bold;
+}
+.h2home {
+    font-family: Verdana, Geneva, Tahoma, monospace;
+    font-weight: bold;
+    color: #292929;
+    text-align: left;
+    letter-spacing: 5px;
+}
+.h2home-right {
+    font-family: Verdana, Geneva, Tahoma, monospace;
+    font-weight: bold;
+    color: #FFCC00;
+    text-align: right;
+    letter-spacing: 5px;
+}
+.margin-items {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.p1 {  
+    border-left: 5px #FFCC00 solid;
+    border-top: 5px #FFCC00 solid;
+    vertical-align: baseline;
+    text-align: left;
+    color: #5a5a5a;
+    font-family: Verdana, Geneva, Tahoma, monospace;    
+    padding: 10px;
+}
+.p2 {  
+    border-right: 5px #FFCC00 solid;
+    border-top: 5px #FFCC00 solid;
+    vertical-align: baseline;
+    text-align: right;
+    color: #5a5a5a;
+    font-family: Verdana, Geneva, Tahoma, monospace;    
+    padding: 10px;
+}
+
+main input {
+    background-color: #5a5a5a;
+    font-family:Verdana, Geneva, Tahoma, monospace;
+    border: none;
+    padding: 12px 20px;
+    min-width: 250px;
+    margin: 10px;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.przycisk {
+    display: inline-block;
+    cursor: pointer;
+    background-image: linear-gradient(#FFCC00,#FFCC00);
+    background-repeat: no-repeat;
+    background-size: 15px 100%;
+    background-position: 0 0;
+    transition: background-size 0.5s,background-position 0.3s 0.5s;
+}
+.przycisk:hover {
+    background-size: 100% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.3s,background-size 0.5s 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    border-top: #FFCC00 2px solid;
+    margin: 40px;
+}
+footer img {
+    margin: 10px;    
+}
+footer p {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       
+}
+
+
+
