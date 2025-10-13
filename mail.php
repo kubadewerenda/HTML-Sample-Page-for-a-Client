@@ -10,43 +10,6 @@
         <link rel="stylesheet" type="text/css" href="css/stylemail.css">       
     </head>
     <body class="coutainer">
-        
-                    <?php
-                        error_reporting(E_ALL);
-                        ini_set('display_errors', 1);
-
-                        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                            $imie = trim($_POST['imie'] ?? '');
-                            $email = trim($_POST['email'] ?? '');
-                            $wiadomosc = trim($_POST['wiadomosc'] ?? '');
-                            $tel = trim($_POST['tel'] ?? '');
-
-                            if ($imie === '' || !filter_var($email, FILTER_VALIDATE_EMAIL) || $wiadomosc === '') {
-                                exit('Błąd: uzupełnij poprawnie imię, e-mail i wiadomość.');
-                            }
-
-                            $to = "kubadewerendaa@gmail.com";
-                            $subject = "Zapytanie Diamond Care";
-
-                            $txt  = "Imię: {$imie}\r\n";
-                            $txt .= "Email: {$email}\r\n";
-                            $txt .= "Telefon: {$tel}\r\n";
-                            $txt .= "Wiadomość:\r\n{$wiadomosc}\r\n";
-
-                            $headers  = "From: Diamond Care <noreply@diamondcare.com>\r\n"; 
-                            $headers .= "Reply-To: {$email}\r\n";
-                            $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-                            $headers .= "MIME-Version: 1.0\r\n";
-
-                            $ok = mail($to, $subject, $txt, $headers);
-
-                            if (!$ok) {
-                                exit('Nie udało się wysłać (brak/niepoprawna konfiguracja SMTP dla mail()).');
-                            }
-
-                            echo 'Wysłano!';
-                        }
-                    ?>
             <!-- POPUP: sukces wysyłki -->
             <section class="po-overlay po--visible" role="dialog" aria-modal="true" aria-labelledby="po-title">
             <div class="po-modal">
@@ -62,8 +25,7 @@
 
                 <p class="po-text">
                 <?php
-                    echo "Witaj <strong>{$imie}</strong>, skontaktujemy się z Tobą jak najszybciej. 
-                        Oczekuj odpowiedzi pod adresem e-mail: <strong>{$email}</strong>.<br> 
+                    echo "Witaj, skontaktujemy się z Tobą jak najszybciej. 
                         Pozdrawiamy — <strong>Diamond Care</strong>.";
                 ?>
                 </p>

@@ -42,15 +42,30 @@
             </section>
             <section class="row">
                 <article class="col-md-8 offset-md-2">
-                    <form method="post" class="formularz" action="mail.php">
-                        <h2 class="h2-form">Napisz do nas</h2>
-                        <input type="text" class="form-in" placeholder="Imię" name="imie" required>
-                        <input type="email" class="form-in" placeholder="E-Mail" name="email" required>
-                        <input type="text" class="form-in" placeholder="Numer telefonu" name="tel" required><br><br>
-                        <textarea rows="1"  class="form-in" placeholder="Jak możemy ci pomóc?" name="wiadomosc"></textarea>
-                        <input type="submit" class="form-but form-send" value="Wyslij wiadomości">
-                    </form>
+                <form method="POST" class="formularz" action="https://formsubmit.co/e7f79880ef8774c3605b0835e8c19445">
+                    <h2 class="h2-form">Napisz do nas</h2>
+
+                    <input type="text" name="_honey" style="display:none">
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="hidden" name="_next" value="https://diamond-care.pl/mail.php">
+
+                    <input type="hidden" name="_subject" value="Zapytanie Diamond Care">
+
+                    <input type="hidden" name="_template" value="table">
+
+                    <input type="hidden" name="_autoresponse" value="Dziękujemy za wiadomość! Odezwiemy się najszybciej jak to możliwe. — Diamond Care">
+
+                    <input type="text"   class="form-in" placeholder="Imię"            name="imie"      required>
+                    <input type="email"  class="form-in" placeholder="E-mail"          name="email"     required>
+                    <input type="text"   class="form-in" placeholder="Numer telefonu"  name="tel"       required><br><br>
+                    <textarea rows="1"   class="form-in" placeholder="Jak możemy Ci pomóc?" name="wiadomosc" required></textarea>
+
+                    <input type="submit" class="form-but form-send" value="Wyślij wiadomość">
+                </form>
                 </article>
+
             </section>            
         </main>
 
