@@ -10,7 +10,7 @@
         </p>
         <p class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center">
         <a href="/Kontakt.php"><img src="/css/img/place.png" width="24" height="24" alt="Adres"></a>
-        Morawica, ul. Diamentowa 5
+        Lublin, ul.Wiejska 32
         </p>
         <p class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center">
         <a href="/Kontakt.php"><img src="/css/img/email.png" width="24" height="24" alt="E-mail"></a>

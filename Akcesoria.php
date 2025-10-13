@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
-        <title>Diamond care-Akcesoria</title>
+        <title>Diamond care - Akcesoria</title>
         <link rel="shortcut icon" href="css/img/logo.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +9,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
         <link rel="stylesheet" type="text/css" href="css/styleakc.css">       
     </head>
-    <body class="coutainer">
+    <body>
         <?php require_once __DIR__ . '/components/Header/header.php'; ?>
 
-        <main class="container-fluid">
+        <main class="container-fluid container-7xl">
             <section class="row">
                 <p class="p-main col-md-8 offset-md-2">Wysokiej jakości zapachy samochodowe, które nadadzą Twojemu pojazdowi przyjemną i świeżą atmosferę. Nasza oferta zawiera różnorodne zapachy, od świeżych i cytrusowych po eleganckie i luksusowe. Każdy zapach jest starannie dobrany,
                      aby zapewnić długotrwałe i intensywne doznania zapachowe. Wybierz Diamond Care, aby dodać wyjątkowy aromat do wnętrza Twojego samochodu.</p>

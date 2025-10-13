@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
-        <title>Diamond care-Kontakt</title>
+        <title>Diamond care - Kontakt</title>
         <link rel="shortcut icon" href="css/img/logo.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +9,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
         <link rel="stylesheet" type="text/css" href="css/stylekon.css">       
     </head>
-    <body class="coutainer">
+    <body>
         <?php require_once __DIR__ . '/components/Header/header.php'; ?>
         
-        <main class="container-fluid">
+        <main class="container-fluid container-7xl">
             <section class="row margin-k">
                 <article class="col-md-8 offset-md-2">
                     <h2 class="h2home-sr">ZAPRASZAMY!</h2>
@@ -21,12 +21,12 @@
             </section>
             <section class="row border-kon margin-k">
                 <article class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 text-center">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.6423402688224!2d20.620271911917303!3d50.74512216598517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47178e995ec0a86d%3A0x21e7d58a50ade971!2sDiamentowa%205%2C%2026-026%20Morawica!5e0!3m2!1spl!2spl!4v1685485604081!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps?q=Wiejska%2032,%20Lublin&output=embed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </article>
                 <article class="col-12 col-sm-5 col-md-4 col-lg-4 col-xl-4">
                     <section class="row">
                         <p class="p-kon"><a href="Kontakt.html"><img src="css/img/phone.png" width="24" height="24" alt="#"></a>+48 664 714 423</p>
-                        <p class="p-kon"><a href="Kontakt.html"><img src="css/img/place.png" width="24" height="24" alt="#"></a>Morawica, ul.Diamentowa 5</p>
+                        <p class="p-kon"><a href="Kontakt.html"><img src="css/img/place.png" width="24" height="24" alt="#"></a>Lublin, ul.Wiejska 32</p>
                         <p class="p-kon"><a href="Kontakt.html"><img src="css/img/email.png" width="24" height="24" alt="#"></a>Diamondcare.kontakt@gmail.com</p>
                     </section>                    
                 </article>
@@ -34,7 +34,7 @@
             <section class="row margin-items">
                 <article class="col-md-6 offset-md-6 text-center">
                     <h2 class="h2home-right">Godziny otwarcia</h2>
-                    <p class="p-r">Poniedziałek-Sobota:8.00-16.00<br>Niedziela:10.00-15.00</p>
+                    <p class="p2">Poniedziałek-Sobota:8.00-16.00<br>Niedziela:10.00-15.00</p>
                 </article>
             </section>
             <section class="row margin-uz">

@@ -27,12 +27,11 @@
             <a class="nav-link dropdown-toggle nav-underline <?= $isActive(['Detailing.php','Akcesoria.php']) ?>" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true">Oferty</a>
             <div class="dropdown-menu" aria-labelledby="submenu">
                 <a class="dropdown-item <?= $isActive(['Detailing.php']) ?>" href="/Detailing.php">Detailing</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item <?= $isActive(['Akcesoria.php']) ?>" href="/Akcesoria.php">Akcesoria</a>
             </div>
             </li>
             <li class="nav-item"><a class="nav-link nav-underline <?= $isActive(['Cennik.php']) ?>" href="/Cennik.php">Cennik</a></li>
-            <li class="nav-item"><a class="nav-link nav-underline <?= $isActive(['Efekty.php']) ?>" href="/Efekty.php">Efekty</a></li>
+            <li class="nav-item"><a class="nav-link nav-underline <?= $isActive(['About.php']) ?>" href="/About.php">O nas</a></li>
+            <li class="nav-item"><a class="nav-link nav-underline <?= $isActive(['Efekty.php']) ?>" href="/Efekty.php">Realizacje</a></li>
             <li class="nav-item"><a class="nav-link nav-underline <?= $isActive(['Kontakt.php']) ?>" href="/Kontakt.php">Kontakt</a></li>
         </ul>
         </div>
