@@ -2,12 +2,44 @@ html {
     background-color: #000;
 }
 
-header {
-    background-image: url(img/headrbg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+/* hero */
+header.hero {
+  position: relative;
+  min-height: 320px;        
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  isolation: isolate;        
 }
+
+header.hero::before{
+  content:"";
+  position:absolute; inset:0;
+  background: url("/css/img/headrbg.jpg") center / cover no-repeat;
+  z-index: -1;
+  /* lekki overlay, żeby tekst/nav był czytelny */
+  filter: saturate(.95) contrast(.95) brightness(.9);
+}
+
+header.hero::after{
+  content:"";
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.15) 40%, rgba(0,0,0,0) 70%);
+  z-index: -1;
+}
+
+@media (min-width: 1200px){
+  header.hero::before{
+    background-attachment: fixed;
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  header.hero::before{
+    background-attachment: scroll !important;
+  }
+}
+
 .marginess {
     margin-right: 10px;
 }
@@ -38,6 +70,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     padding-top: 2rem;
+    gap: 10rem;
 }
 .diamond-napis{
   inline-size: clamp(350px, 46vw, 640px); 
@@ -48,6 +81,13 @@ header {
     width: 400px;
     height: auto;
     max-width: 100%;
+}
+
+.header-sm-logo{
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+
 }
 .margines {
     width: 100%;
@@ -61,7 +101,7 @@ header a {
     font-weight: 600;
     letter-spacing: .15rem;
     margin-right:  40px;
-    color: #5a5a5a;
+    color: #999999;
     font-weight: bold;
 }
 
@@ -216,20 +256,20 @@ main, footer{ position: relative; z-index: 1; }
     max-width: 97%;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, monospace;
-    color: #5a5a5a;
+    color: #999999;
     text-align: left;
 }
 .p-main {
     vertical-align: baseline;
     text-align: center;
-    color: #5a5a5a;
+    color: #999999;
     font-family: Verdana, Geneva, Tahoma, monospace;
     margin-top: 2rem;
 } 
 .h2home-left {
     font-family: Verdana, Geneva, Tahoma, monospace;
     font-weight: bold;
-    color: #292929;
+    color: #adadad;
     text-align: center;
     letter-spacing: 2px;
 }
@@ -241,7 +281,7 @@ main, footer{ position: relative; z-index: 1; }
 }
 
 .section-desc{
-    color:#5a5a5a;
+    color:#999999;
     font-size: 1.1rem;
     line-height: 1.6;
     margin: .25rem 0 0.75rem;
@@ -252,7 +292,7 @@ main, footer{ position: relative; z-index: 1; }
 }
 
 .note {
-    background-color: #c5c5c5;
+    background-color: #6b6b6b8f;
 }
 
 :root{
@@ -263,7 +303,7 @@ main, footer{ position: relative; z-index: 1; }
 .p1, .p2, .p-sr{
   position: relative;
   padding: 10px 12px;
-  color: #5a5a5a;
+  color: #999999;
     font-family: Verdana, Geneva, Tahoma, monospace;
 
 }
@@ -333,7 +373,7 @@ footer img {
     display: inline-block;
 }
 footer p {
-    color: white;
+    color: #999999;
     letter-spacing: 1px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

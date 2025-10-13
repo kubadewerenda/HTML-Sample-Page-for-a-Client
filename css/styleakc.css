@@ -2,12 +2,45 @@ html {
     background-color: #000;
 }
 
-header {
-    background-image: url(img/headrbg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+/* hero */
+header.hero {
+  position: relative;
+  min-height: 320px;        
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  isolation: isolate;  
+  z-index: 3;      
 }
+
+header.hero::before{
+  content:"";
+  position:absolute; inset:0;
+  background: url("/css/img/headrbg.jpg") center / cover no-repeat;
+  z-index: -1;
+  /* lekki overlay, żeby tekst/nav był czytelny */
+  filter: saturate(.95) contrast(.95) brightness(.9);
+}
+
+header.hero::after{
+  content:"";
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.15) 40%, rgba(0,0,0,0) 70%);
+  z-index: -1;
+}
+
+@media (min-width: 1200px){
+  header.hero::before{
+    background-attachment: fixed;
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  header.hero::before{
+    background-attachment: scroll !important;
+  }
+}
+
 .marginess {
     margin-right: 10px;
 }
@@ -42,6 +75,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     padding-top: 2rem;
+    gap: 10rem;
 }
 .diamond-napis{
   inline-size: clamp(350px, 46vw, 640px); 
@@ -359,7 +393,7 @@ footer img {
     display: inline-block;
 }
 footer p {
-    color: white;
+    color: #999999;
     letter-spacing: 1px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

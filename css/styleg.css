@@ -2,12 +2,45 @@ html {
     background-color: #000;
 }
 
-header {
-    background-image: url(img/headrbg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+/* hero */
+header.hero {
+  position: relative;
+  min-height: 320px;        
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  isolation: isolate;    
+  z-index: 3;    
 }
+
+header.hero::before{
+  content:"";
+  position:absolute; inset:0;
+  background: url("/css/img/headrbg.jpg") center / cover no-repeat;
+  z-index: -1;
+  /* lekki overlay, żeby tekst/nav był czytelny */
+  filter: saturate(.95) contrast(.95) brightness(.9);
+}
+
+header.hero::after{
+  content:"";
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.15) 40%, rgba(0,0,0,0) 70%);
+  z-index: -1;
+}
+
+@media (min-width: 1200px){
+  header.hero::before{
+    background-attachment: fixed;
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  header.hero::before{
+    background-attachment: scroll !important;
+  }
+}
+
 .marginess {
     margin-right: 10px;
 }
@@ -38,6 +71,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     padding-top: 2rem;
+    gap: 10rem;
 }
 .diamond-napis{
   inline-size: clamp(350px, 46vw, 640px); 
@@ -48,6 +82,13 @@ header {
     width: 400px;
     height: auto;
     max-width: 100%;
+}
+
+.header-sm-logo{
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+
 }
 .margines {
     width: 100%;
@@ -61,7 +102,7 @@ header a {
     font-weight: 600;
     letter-spacing: .15rem;
     margin-right:  40px;
-    color: #5a5a5a;
+    color: #999999;
     font-weight: bold;
 }
 
@@ -215,7 +256,7 @@ main, footer{ position: relative; z-index: 1; }
 .h2home {
     font-family: Verdana, Geneva, Tahoma, monospace;
     font-weight: bold;
-    color: #7d7d7d;
+    color: #adadad;
     text-align: left;
     letter-spacing: 2px;
 }
@@ -244,7 +285,7 @@ main, footer{ position: relative; z-index: 1; }
 .p1, .p2, .p-sr{
   position: relative;
   padding: 10px 12px;
-  color: #5a5a5a;
+  color: #999999;
     font-family: Verdana, Geneva, Tahoma, monospace;
 
 }
@@ -393,8 +434,8 @@ main, footer{ position: relative; z-index: 1; }
   position:absolute; inset:auto 0 0 0; padding:1rem 1.1rem; z-index:1;
 }
 
-.svc-title{ margin:0 0 .2rem; font-weight:900; color:#787878; font-size: clamp(1.05rem, 2.2vw, 1.4rem); }
-.svc-desc{ margin:0; color:#5a5a5a; font-size: .98rem; line-height:1.5; }
+.svc-title{ margin:0 0 .2rem; font-weight:900; color:#c4c4c4; font-size: clamp(1.05rem, 2.2vw, 1.4rem); }
+.svc-desc{ margin:0; color:#999999; font-size: .98rem; line-height:1.5; }
 .svc-link{ display:inline-block; margin-top:.45rem; color:#ebc55c; font-weight:700; }
 
 /* Sekcja: Specjalizacje */
@@ -438,7 +479,7 @@ main, footer{ position: relative; z-index: 1; }
 }
 .feature-title::before{ content:"✧"; font-size:1.1em; line-height:1; color:#ebc55c; opacity:.9; }
 
-.feature-card p{ margin:0; color:#5a5a5a; font-size:1rem; line-height:1.6; }
+.feature-card p{ margin:0; color:#999999; font-size:1rem; line-height:1.6; }
 
 .feature-card:hover{
   transform: translateY(-2px);
@@ -490,6 +531,7 @@ main, footer{ position: relative; z-index: 1; }
   transform: translateX(-50%);
   min-width: 34px; height: 34px; line-height: 34px;
   border-radius: 999px;
+  padding-left: 11px;
   font-weight: 800;
   color: #111;
   background: var(--brand);
@@ -507,7 +549,7 @@ main, footer{ position: relative; z-index: 1; }
 
 .step-desc{
   margin: .25rem auto 0;
-  color: #5a5a5a;
+  color: #999999;
   font-size: .98rem;
   line-height: 1.55;
   max-width: 34ch;
@@ -517,6 +559,13 @@ main, footer{ position: relative; z-index: 1; }
 .step:hover .step-num{ filter: brightness(1.05); transform: translateX(-50%) translateY(-1px); }
 
 @media (max-width: 768px){
+    /* wyłącz poziomą linię z wersji desktop */
+  .steps-timeline::before{
+    content: none !important;
+    display: none !important;
+    background: none !important;
+  }
+  
   :root{
     --axis-x: 1.25rem;  
     --pad-left: 2.8rem; 
@@ -624,7 +673,7 @@ main, footer{ position: relative; z-index: 1; }
 .p-sr-none{
     vertical-align: baseline;
     text-align: center;
-    color: #5a5a5a;
+    color: #999999;
     font-family: Verdana, Geneva, Tahoma, monospace;
     padding: 10px;
 
@@ -659,7 +708,7 @@ footer img {
     display: inline-block;
 }
 footer p {
-    color: white;
+    color: #999999;
     letter-spacing: 1px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
