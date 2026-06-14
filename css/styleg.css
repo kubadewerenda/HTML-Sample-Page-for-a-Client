@@ -542,7 +542,7 @@ main, footer{ position: relative; z-index: 1; }
   margin-top: 48px;          
   font-weight: 800;
   letter-spacing: .02em;
-  color: #787878;
+  color: #a1a1a1;
   font-size: clamp(1rem, 2vw, 1.1rem);
 }
 
