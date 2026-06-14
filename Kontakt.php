@@ -6,12 +6,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
-        <link rel="stylesheet" type="text/css" href="css/stylekon.css">       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/stylekon.css">
     </head>
     <body>
         <?php require_once __DIR__ . '/components/Header/header.php'; ?>
-        
+
         <main class="container-fluid container-7xl">
             <section class="row margin-k">
                 <article class="col-md-8 offset-md-2">
@@ -21,14 +21,14 @@
             </section>
             <section class="row border-kon margin-k">
                 <article class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 text-center">
-                    <iframe src="https://www.google.com/maps?q=Wiejska%2032,%20Lublin&output=embed" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.1183295675387!2d22.601948576745094!3d51.253730629202835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722572f3424cdc7%3A0xf263d27858230a39!2sTurystyczna%209G%2C%2020-207%20Lublin!5e0!3m2!1sen!2spl!4v1781461551555!5m2!1sen!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </article>
                 <article class="col-12 col-sm-5 col-md-4 col-lg-4 col-xl-4">
                     <section class="row">
                         <p class="p-kon"><a href="Kontakt.html"><img src="css/img/phone.png" width="24" height="24" alt="#"></a>+48 664 714 423</p>
-                        <p class="p-kon"><a href="Kontakt.html"><img src="css/img/place.png" width="24" height="24" alt="#"></a>Lublin, ul.Wiejska 32</p>
+                        <p class="p-kon"><a href="Kontakt.html"><img src="css/img/place.png" width="24" height="24" alt="#"></a>Lublin, ul. Turystyczna 9G</p>
                         <p class="p-kon"><a href="Kontakt.html"><img src="css/img/email.png" width="24" height="24" alt="#"></a>Diamondcare.kontakt@gmail.com</p>
-                    </section>                    
+                    </section>
                 </article>
             </section>
             <section class="row margin-items">
@@ -66,9 +66,9 @@
                 </form>
                 </article>
 
-            </section>            
+            </section>
         </main>
 
-        <?php require_once __DIR__ . '/components/Footer/footer.php'; ?>      
+        <?php require_once __DIR__ . '/components/Footer/footer.php'; ?>
     </body>
 </html>
